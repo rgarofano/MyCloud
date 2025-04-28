@@ -1,0 +1,4 @@
+[submodule "contacts-service"]
+	path = contacts-service
+	url = git@github.com:rgarofano/contacts-service.git
+	branch = master
