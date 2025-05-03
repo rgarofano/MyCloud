@@ -30,7 +30,7 @@ jobs:
       - name: Build each service submodule
         run: |
           echo "Building services.."
-          for dir in $(git config --file .gitmodules --get-regexp path | cut -d ' ' -f 2);
+          for dir in $(git config --file .gitmodules --get-regexp path | cut -d ' ' -f 2); do
             echo "Entering ${dir}"
             cd ${dir}
             if [ -f "go.mod" ]; then
