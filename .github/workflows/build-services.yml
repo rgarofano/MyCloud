@@ -4,14 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - '**.gitmodules'
-      - '**.gitmodules/**'
-      - '**go.mod'
-      - '**/go.sum'
-      - '**/main.go'
-      - '**/*.go'
-      - '**/Makefile'
 jobs:
   build:
     runs-on: ubuntu-latest
